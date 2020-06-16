@@ -9,7 +9,7 @@ servers:
 paths:
   /pets:
     get:
-      summary: 'List all petsa <strong>XSS</strong>'
+      summary: List all petsa <strong>XSS</strong>
       operationId: listPets
       tags:
         - pets
@@ -79,7 +79,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-      description: asdfsdfasd
+      description: asdfsdfasdasd
 components:
   schemas:
     Pet:
