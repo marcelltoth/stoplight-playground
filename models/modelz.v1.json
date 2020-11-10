@@ -1,0 +1,9 @@
+{
+  "title": "modelz.v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  }
+}
