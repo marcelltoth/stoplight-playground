@@ -14,7 +14,7 @@
     "related_items": {
       "type": "array",
       "items": {
-        "$ref": "./items.v1.json"
+        "$ref": "./circular.v1.json"
       }
     }
   }
