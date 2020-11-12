@@ -1,0 +1,21 @@
+{
+  "title": "items",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "related_items": {
+      "type": "array",
+      "items": {
+        "$ref": "./items.v1.json"
+      }
+    }
+  }
+}
