@@ -88,13 +88,13 @@ components:
         id:
           type: integer
           format: int64
-        long_name:
+        name_on_test_branch:
           type: string
         tag:
           type: string
       required:
         - id
-        - long_name
+        - name_on_test_branch
     Pets:
       type: array
       items:
