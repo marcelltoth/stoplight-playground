@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: one-of-any-of-test.v1
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  '/pet':
+    get:
+      summary: Find pet by ID
+      operationId: getPetById
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  foo:
+                    oneOf:
+                      - $ref: '#/components/schemas/Cat'
+                      - $ref: '#/components/schemas/Dog'
+
+components:
+  schemas:
+    Cat:
+      type: object
+      properties: 
+        weight:
+          type: number
+    Dog:
+      title: Dog Model
+      type: object
+      properties: 
+        weight:
+          type: number
+        favoriteToy:
+          type: string
